@@ -1,0 +1,16 @@
+# Adapted from From http://www.cmake.org/pipermail/cmake/2010-November/041034.html
+# Don't care about format
+macro(NOW RESULT)
+	if (WIN32)
+		execute_process(COMMAND "cmd" "/C date /T" OUTPUT_VARIABLE tvar OUTPUT_STRIP_TRAILING_WHITESPACE)
+		set(${RESULT} "WIN32: ${tvar}")
+		execute_process(COMMAND "cmd" "/C time /T" OUTPUT_VARIABLE tvar OUTPUT_STRIP_TRAILING_WHITESPACE)
+		set(${RESULT} "${${RESULT}} ${tvar}")
+	elseif (UNIX)
+		execute_process(COMMAND "date" "-u" OUTPUT_VARIABLE tvar OUTPUT_STRIP_TRAILING_WHITESPACE)
+		set(${RESULT} "UNIX: ${tvar}")
+	else()
+		message(SEND_ERROR "date not implemented")
+		set(${RESULT} "XXX: 000000")
+	endif()
+endmacro(NOW)

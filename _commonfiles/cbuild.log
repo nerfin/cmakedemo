@@ -1,0 +1,38 @@
+# cbuild (v1 linux.x64) (njs=v0.10.0/v8=3.14.5.8)
+# Mon Mar 25 2013 15:55:54 GMT+1100 (EST)
+# /var/nfs/cmaketester
+cmake "/var/nfs/cmaketester/egcore" -DEG_BUILDDOC=y -DCMAKE_BUILD_TYPE=debug -DCMAKE_LEGACY_CYGWIN_WIN32=0 -DCMAKE_INSTALL_PREFIX=/var/nfs/cmaketester/_output-debug/linux.x64/install -DCMAKE_PREFIX_PATH=/var/nfs/cmaketester/_output-debug/linux.x64/install -G"Eclipse CDT4 - Unix Makefiles"
+# Mon Mar 25 2013 15:55:54 GMT+1100 (EST)
+# Completed. Duration = 0.01
+cmake --build . --config debug
+cmake --build . --target doc --config debug
+cmake --build . --target pkg --config debug
+cmake --build . --target package_source --config debug
+cmake --build . --target install --config debug
+# /var/nfs/cmaketester
+cmake "/var/nfs/cmaketester/egcoretester" -DEG_BUILDDOC=y -DCMAKE_BUILD_TYPE=debug -DCMAKE_LEGACY_CYGWIN_WIN32=0 -DCMAKE_INSTALL_PREFIX=/var/nfs/cmaketester/_output-debug/linux.x64/install -DCMAKE_PREFIX_PATH=/var/nfs/cmaketester/_output-debug/linux.x64/install -G"Eclipse CDT4 - Unix Makefiles"
+cmake --build . --config debug
+cmake --build . --target doc --config debug
+cmake --build . --target pkg --config debug
+cmake --build . --target package_source --config debug
+cmake --build . --target install --config debug
+# /var/nfs/cmaketester
+cmake "/var/nfs/cmaketester/egfn" -DEG_BUILDDOC=y -DCMAKE_BUILD_TYPE=debug -DCMAKE_LEGACY_CYGWIN_WIN32=0 -DCMAKE_INSTALL_PREFIX=/var/nfs/cmaketester/_output-debug/linux.x64/install -DCMAKE_PREFIX_PATH=/var/nfs/cmaketester/_output-debug/linux.x64/install -G"Eclipse CDT4 - Unix Makefiles"
+cmake --build . --config debug
+cmake --build . --target doc --config debug
+cmake --build . --target pkg --config debug
+cmake --build . --target package_source --config debug
+cmake --build . --target install --config debug
+# /var/nfs/cmaketester
+cmake "/var/nfs/cmaketester/egfntester" -DEG_BUILDDOC=y -DCMAKE_BUILD_TYPE=debug -DCMAKE_LEGACY_CYGWIN_WIN32=0 -DCMAKE_INSTALL_PREFIX=/var/nfs/cmaketester/_output-debug/linux.x64/install -DCMAKE_PREFIX_PATH=/var/nfs/cmaketester/_output-debug/linux.x64/install -G"Eclipse CDT4 - Unix Makefiles"
+cmake --build . --config debug
+cmake --build . --target doc --config debug
+cmake --build . --target pkg --config debug
+cmake --build . --target package_source --config debug
+cmake --build . --target install --config debug
+# /var/nfs/cmaketester/_output-debug/linux.x64/install/bin/egcoretester
+node runtester
+# /var/nfs/cmaketester/_output-debug/linux.x64/install/bin/egfntester
+node runtester
+# Mon Mar 25 2013 15:56:00 GMT+1100 (EST)
+# Completed. Duration = 6.431
