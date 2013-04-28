@@ -1,0 +1,13 @@
+git config --global user.name nerfin
+git config --global user.email nerfin@pobox.com
+git config --global core.autocrlf input
+export GIT_EDITOR=/opt/sublime_text/sublime_text
+git gui
+
+git clone git://github.com/nerfin/cmakedemo cmakedemo
+git checkout branchXXX
+git add *
+git status
+git commit -m "Initial commit" or uses GIT_EDITOR
+git remote add origin https://github.com/nerfin/cmakedemo.git
+

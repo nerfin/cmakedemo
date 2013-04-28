@@ -1,6 +1,6 @@
 Purpose
 -------
-The purpose of this project is to demonstrate some aspects of using CMAKE with some simple interdependent demo C libraries and applications. GitHub is a great place to store projects, so here it is. It's targetted at me, but if someone else finds it useful, then great.
+The purpose of this project is to demonstrate some aspects of using CMAKE with some simple interdependent demo C libraries and applications. As a first project with git/GitHub, it's also a means for me to explore these. It's targetted at me, but if someone else finds it useful, then great.
 
 In particular:
 
