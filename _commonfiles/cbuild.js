@@ -240,7 +240,7 @@ function setup_test(project) {
 
 // Create folder if it does not exist - if force then delete the folder first.
 function createFolder(foldername, force) {
-    'use strict';     // we need to get rid of wrench
+    //'use strict';     // we need to get rid of wrench
     if (force && fs.existsSync(foldername)) {
         print('Removing build folder ' + foldername);
         wrench.rmdirSyncRecursive(foldername, false);
